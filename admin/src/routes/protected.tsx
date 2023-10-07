@@ -1,4 +1,7 @@
-import { Outlet } from 'react-router-dom'
+import { Navigate, Outlet } from 'react-router-dom'
+import MainLayout from '../components/layouts/MainLayout'
+import Dashboard from '../components/pages/Dashboard'
+import ProductPage from '../components/pages/ProductPage'
 
 const App = () => {
   return (
@@ -12,8 +15,14 @@ const App = () => {
 
 export const protectedRoutes = [
   {
-    path: '/app',
-    element: <App />,
-    children: [{ path: 'products', element: <h1>Product page</h1> }]
-  }
+    path: '/admin',
+    element: <MainLayout />,
+    children:
+     [
+      {index: true, element: <Navigate to = "dashboard"/>},
+      { path: 'dashboard', element: <Dashboard/> },
+      {path: 'products' , element: <ProductPage/>}
+    ]
+  },
+  
 ]
