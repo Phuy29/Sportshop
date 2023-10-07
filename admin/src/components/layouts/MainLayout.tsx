@@ -7,6 +7,7 @@ import {
 } from 'react-icons/ai';
 import { Layout, Menu, Button, theme } from 'antd';
 import { Link, Outlet } from 'react-router-dom';
+import Nav from "../layouts/Nav";
 
 const { Header, Sider, Content } = Layout;
 
@@ -17,6 +18,9 @@ const MainLayout = () => {
   } = theme.useToken();
 
   return (
+    <>
+    
+    <Nav></Nav>
     <Layout className='h-screen'>
       <Sider trigger={null} collapsible collapsed={collapsed}>
         <div className="demo-logo-vertical" />
@@ -64,6 +68,9 @@ const MainLayout = () => {
         </Content>
       </Layout>
     </Layout>
+    
+    
+    </>
   );
 };
 

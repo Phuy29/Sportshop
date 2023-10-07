@@ -1,0 +1,49 @@
+.container-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 25px;
+}
+
+.nav-search-admin input {width: 300px;height: 35px;padding-left: 30px;border-radius: 25px;border: 1px solid black;}
+
+.nav-ures-admin {
+    border: 1px solid black;
+    border-radius: 25px;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+
+.nav-search-icon {
+    position: absolute;
+    height: 31px;
+    width: 69px;
+    background: #1677FF;
+    border-radius: 25px;
+    right: 3px;
+    top: 3px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+
+}
+
+.nav-search-icon svg {
+    font-size: 23px;
+    margin-top: 5px;
+}
+
+.nav-search-admin {
+    position: relative;
+}
+.nav-ures-admin:hover {
+    background: #1677FF;
+    border: none;
+    color: #fff;
+}
