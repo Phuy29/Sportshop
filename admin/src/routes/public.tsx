@@ -1,8 +1,8 @@
-import { AuthRoutes } from '../features/auth/routes'
+import LoginPage from '@/pages/LoginPage'
 
 export const publicRoutes = [
   {
-    path: '/auth/*',
-    element: <AuthRoutes />
+    path: 'auth/login',
+    element: <LoginPage />
   }
 ]
